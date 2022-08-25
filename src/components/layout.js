@@ -13,9 +13,8 @@ export default ({ children }) => {
                 <link rel="icon" href="/favicon-32x32.png" />
                 <meta
                     name="description"
-                    content="Check out iPhone 12 XR Pro and iPhone 12 Pro Max. Visit your local store and for expert advice."
-                />
-
+                    content="Top Chartered Accountant in Madhapur, Hyderabad, Telangana, India | CRR Corporte Services."
+                /> 
 
             </Head>
             <Header></Header>

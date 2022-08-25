@@ -1,39 +1,46 @@
 import Head from 'next/head'
 import Layout from "../../components/layout";
-import { Container, Row, Card, Button } from 'react-bootstrap'
+
+import ServiceSection from "../../components/services";
 
 export default function Services() {
 
   const services = [
     {
-      heading: "Private Limited Registations",
-      subheading: "We are engrossed in providing high quality and reliable consultancy services for company registration.",
-      url: "/company-registrations/private-company-registrations"
+      title: "Private Limited Registations",
+      desc: "We are engrossed in providing high quality and reliable consultancy services for company registration.",
+      url: "/company-registrations/private-company-registrations",
+      className: "blue"
     },
     {
-      heading: "One Person Company Registations",
-      subheading: "We are engrossed in providing high quality and reliable consultancy services for company registration.",
-      url: "/company-registrations"
+      title: "One Person Company Registations",
+      desc: "We are engrossed in providing high quality and reliable consultancy services for company registration.",
+      url: "/company-registrations",
+      className: "orange"
     },
     {
-      heading: "Shops And Establishment",
-      subheading: "We are engrossed in providing high quality and reliable consultancy services for company registration.",
-      url: "/company-registrations"
+      title: "Shops And Establishment",
+      desc: "We are engrossed in providing high quality and reliable consultancy services for company registration.",
+      url: "/company-registrations",
+      className: "green"
     },
     {
-      heading: "Startup India Registration",
-      subheading: "We are engrossed in providing high quality and reliable consultancy services for company registration.",
-      url: "/company-registrations"
+      title: "Startup India Registration",
+      desc: "We are engrossed in providing high quality and reliable consultancy services for company registration.",
+      url: "/company-registrations",
+      className: "red"
     },
     {
-      heading: "Udyam Registration",
-      subheading: "We are engrossed in providing high quality and reliable consultancy services for company registration.",
-      url: "/company-registrations"
+      title: "Udyam Registration",
+      desc: "We are engrossed in providing high quality and reliable consultancy services for company registration.",
+      url: "/company-registrations",
+      className: "purple"
     },
     {
-      heading: "Nidhi company",
-      subheading: "We are engrossed in providing high quality and reliable consultancy services for company registration.",
-      url: "/company-registrations"
+      title: "Nidhi company",
+      desc: "We are engrossed in providing high quality and reliable consultancy services for company registration.",
+      url: "/company-registrations",
+      className: "pink"
     }
   ]
 
@@ -57,42 +64,27 @@ export default function Services() {
 
   return (
     <Layout>
-
-      <div class="container px-4 py-5" id="featured-3">
-        <h2 class="pb-2 text-center">Our Various Company Registration Services</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          {services.map((service) =>
-            <a>
-              <div class="feature col">
-                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-collection" viewBox="0 0 16 16">
-                    <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z" />
-                  </svg>
-                </div>
-                <h2>{service.heading}</h2>
-                <p>{service.subheading}</p>
-                <a href={service.url} class="icon-link d-inline-flex align-items-center">
-                  Read More
-
-                </a>
-              </div>
-            </a>
-          )
-          }
-
+      <div class="page-header bg-light py-3 mb-3">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Services</li>
+            </ol>
+          </nav>
         </div>
       </div>
+      <ServiceSection services={services} heading="Our Various Company Registration Services"></ServiceSection>
+      <div className="container px-4 py-5" id="icon-grid">
 
-      <div class="container px-4 py-5" id="icon-grid">
+        <div className="row flex-lg-row align-items-center g-5 py-5">
+          <div className="col-10 col-sm-8 col-lg-6">
 
-        <div class="row flex-lg-row align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-
-            <div class="card border-0">
-              <div class="testimonials">
+            <div className="card border-0">
+              <div className="testimonials">
                 <svg viewBox="0 0 24 24">
                   <path fill="currentColor" d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"></path></svg>
-                <blockquote class="TwoColumnWithFeaturesAndTestimonial__Quote-sc-7wvgyg-19">
+                <blockquote className="TwoColumnWithFeaturesAndTestimonial__Quote-sc-7wvgyg-19">
                   Best service provided. A new and yet best corporate advisors in town to solve the problem and provide consultation for the best.
                 </blockquote>
                 <div >Jaya Banerjee
@@ -100,25 +92,25 @@ export default function Services() {
                 <div >Founder.</div>
 
               </div>
-              <div class="p-image  mx-auto">
+              <div className="p-image  mx-auto">
                 <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" width="350"></img>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <h2 class="pb-2">Why CRR Corporate Services?</h2>
+          <div className="col-lg-6">
+            <h2 className="pb-2">Why CRR Corporate Services?</h2>
 
-            <div class="row row-cols-1 row-cols-sm-2 g-4 py-5">
+            <div className="row row-cols-1 row-cols-sm-2 g-4 py-5">
 
-              {iconGRid.map((item) =>
-                <div class="col d-flex align-items-start">
-                  <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em" viewBox="0 0 16 16">
+              {iconGRid.map((item, index) =>
+                <div key={index.toString()} className="col d-flex align-items-start">
+                  <svg className="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em" viewBox="0 0 16 16">
                     <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z" />
                     <path d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z" />
                     <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" />
                   </svg>
                   <div>
-                    <h4 class="fw-bold mb-0">{item.title}</h4>
+                    <h4 className="fw-bold mb-0">{item.title}</h4>
                     <p>{item.desc}</p>
                   </div>
                 </div>

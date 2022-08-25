@@ -35,23 +35,23 @@ export default function Services() {
   return (
     <Layout>
 
-      <div class="container">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"></img>
+      <div className="container">
+        <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div className="col-10 col-sm-8 col-lg-6">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80" className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"></img>
           </div>
-          <div class="col-lg-6">
-            <h5 class="text-crr">Start Your Business</h5>
-            <h1 class="display-3 fw-bold lh-sm mb-3">Nidhi Company Registration.</h1>
-            <p class="lead">We are We are engrossed in providing high quality and reliable consultancy services for company registration.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contact Us</button>
+          <div className="col-lg-6">
+            <h5 className="text-crr">Start Your Business</h5>
+            <h1 className="display-3 fw-bold lh-sm mb-3">Nidhi Company Registration.</h1>
+            <p className="lead">We are We are engrossed in providing high quality and reliable consultancy services for company registration.</p>
+            <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">Contact Us</button>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="container">
+      <div className="container">
 
         <h2>What is a Nidhi company?</h2>
         <p>
@@ -133,14 +133,14 @@ export default function Services() {
       </div>
 
 
-      <div class="container">
+      <div className="container">
 
         <h2>Procedure for Nidhi Company Registration</h2>
 
-        <div class="row py-2">
-          <div class="col-md-1 text-muted display-6">
+        <div className="row py-2">
+          <div className="col-md-1 text-muted display-6">
             <span>01</span></div>
-          <div class="col-md-11">
+          <div className="col-md-11">
 
             <h6>Obtain DSC</h6>
             <p>  Obtain DSC from the authorized certifying agencies. A list of certified agencies is available on the official website of MCA. You can avail Digital Signature Certificate by submitting a few details.
@@ -149,10 +149,10 @@ export default function Services() {
           </div>
         </div>
 
-        <div class="row py-2">
-          <div class="col-md-1 text-muted display-6">
+        <div className="row py-2">
+          <div className="col-md-1 text-muted display-6">
             <span>02</span></div>
-          <div class="col-md-11">
+          <div className="col-md-11">
 
             <h6> SPICe+ Form</h6>
             <p>
@@ -166,10 +166,10 @@ export default function Services() {
           </div>
         </div>
 
-        <div class="row py-2">
-          <div class="col-md-1 text-muted display-6">
+        <div className="row py-2">
+          <div className="col-md-1 text-muted display-6">
             <span>04</span></div>
-          <div class="col-md-11">
+          <div className="col-md-11">
 
             <h6>Part B consists of</h6>
             <p>
@@ -183,10 +183,10 @@ export default function Services() {
             </p>
           </div>
         </div>
-        <div class="row py-2">
-          <div class="col-md-1 text-muted display-6">
+        <div className="row py-2">
+          <div className="col-md-1 text-muted display-6">
             <span>03</span></div>
-          <div class="col-md-11">
+          <div className="col-md-11">
 
             <h6>Attachments</h6>
             <p>
@@ -201,10 +201,10 @@ export default function Services() {
             </p>
           </div>
         </div>
-        <div class="row py-2">
-          <div class="col-md-1 text-muted display-6">
+        <div className="row py-2">
+          <div className="col-md-1 text-muted display-6">
             <span>05</span></div>
-          <div class="col-md-11">
+          <div className="col-md-11">
 
             <h6> Secure SRN</h6>
             <p>      

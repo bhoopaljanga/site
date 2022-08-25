@@ -8,8 +8,8 @@ export default function Services() {
 
   return (
     <Layout>
-      <div class="container px-4 py-5" id="featured-3">
-        <h2 class="pb-2 text-center">Frequently Asked Questions</h2>
+      <div className="container px-4 py-5" id="featured-3">
+        <h2 className="pb-2 text-center">Frequently Asked Questions</h2>
 
         <Accordion defaultActiveKey="0">
           <Accordion.Item eventKey="0">

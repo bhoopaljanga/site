@@ -1,4 +1,4 @@
 module.exports = {
-    basePath: '/',
+    basePath: '',
     assetPrefix: '/', // assetPrefix requires the trailing slash
   }
