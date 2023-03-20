@@ -108,7 +108,9 @@ export default () => {
                 <a href="/" title="CRR" className=" logo d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
                   <img src="/images/logo.jpeg" />
                 </a>
-                <div className="text-muted my-4"><div> Flat No: 501, MVS Heights</div><div>   Beside Balaji Temple, Vinayak Nagar,</div><div>  Madhapur-500081</div><div>  Landline: 9140-40050954</div><div>  Phone: +91-9985100360</div><div>  Email: info@crrcs.in</div></div>
+                <div className="text-muted my-4"><div>Plot  No.49B, Sairaj Towers</div>
+                <div> Beside Mercedes Benz Showroom</div>
+                <div>  Kavuri Hills, Hyderabad-500081</div><div>  Landline: 9140-40050954</div><div>  Phone: +91-9985100360</div><div>  Email: info@crrcs.in</div></div>
               </div>
               {
                 footerlinks.sections.map((section, index) =>
