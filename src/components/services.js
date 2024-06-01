@@ -4,15 +4,15 @@ export default ({ services = null, heading = "Our Professional Services" }) => {
 
     const defaultServices = [
         {
-            title: "Corporate Services",
-            desc: "We are engrossed in providing high quality and reliable consultancy services for company registration",
-            url: "/company-registrations",
+            title: "ITR Filings",
+            desc: "Our Experts helps you save time & money without compromiaing accuracy in income tax filing",
+            url: "/itr-filings",
             className: "blue"
         },
         {
             title: "GST Services",
             desc: "We can take care of your GST filing process and help to claim your right input credits",
-            url: "/company-registrations",
+            url: "/services/gst-services",
             className: "orange"
         }
         , {

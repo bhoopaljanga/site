@@ -7,58 +7,35 @@ export default () => {
   const onClick = () => setNavbarOpen(!navbarOpen)
   const services = [
     {
-      heading: "Private Limited Registations",
+      heading: "ITR Filings",
 
-      url: "/company-registrations/private-company-registrations"
+      url: "/itr-filings"
     },
     {
-      heading: "Public Limited Registations",
+      heading: "GST Services",
+
+      url: "/services/gst-services"
+    },
+    {
+      heading: "Company Registations",
 
       url: "/company-registrations/public-company-registrations"
-    },
-    {
-      heading: "One Person Company Registations",
+    } , {
+      heading: "Digital Signatures",
 
-      url: "/company-registrations/one-person-company-registrations"
-    },
-    {
-      heading: "Shops And Establishment",
-
-      url: "/company-registrations/shops-and-establishment-registrations"
-    },
-    {
-      heading: "Startup India Registration",
-
-      url: "/company-registrations/startup-india-registrations"
-    },
-    {
-      heading: "Udyam Registration",
-
-      url: "/company-registrations/udyam-registrations"
-    },
-    {
-      heading: "Nidhi company",
-
-      url: "/company-registrations/nidhi-company-registrations"
-    }
+      url: "/company-registrations"
+    }, 
   ]
 
 
   const cservices = [
-    {
-      heading: "GST Services",
-      url: "/company-registrations/private-company-registrations"
-    },
+    
     {
       heading: "HR Services",
 
       url: "/company-registrations"
     },
-    {
-      heading: "Digital Signatures",
-
-      url: "/company-registrations"
-    },
+   
     {
       heading: "FCRA Services",
 
@@ -74,12 +51,10 @@ export default () => {
         <i class="bi bi-envelope d-flex align-items-center">
           <a href="mailto:info@crrcs.in">info@crrcs.in</a></i>
         <i class="bi bi-phone d-flex align-items-center ms-4">
-          <span>+9140-40050954</span>
+          <span>18008892499</span>
           </i>
       </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="https://www.instagram.com/crrservices4/" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#https://www.instagram.com/crrservices4/" class="facebook"><i class="bi bi-facebook"></i></a>
+      <div class="social-links d-none d-md-flex align-items-center"> 
         <a href="https://www.instagram.com/crrservices4/" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="https://www.instagram.com/crrservices4/" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
@@ -99,7 +74,7 @@ export default () => {
             <ul className="navbar-nav nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
 
               <li className="dropdown"><a href="/services" className="nav-link fw-bold  px-3 link-dark">Services</a>
-                <div className="dropdown-menu text-small shadow p-3" data-popper-placement="top-start">
+                <div className="dropdown-menu text-small border-0 p-3" data-popper-placement="top-start">
                   <div className="row">
 
                     <div className="col-md-4">
@@ -109,7 +84,7 @@ export default () => {
                             <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z" />
                           </svg>
                           <div>
-                            <strong className="d-block">Company Registrations</strong> 
+                            <strong className="d-block">Expert Services</strong> 
                           </div>
                         </a>
 

@@ -4,18 +4,21 @@ import Script from 'next/script'
 import Header from "./header.js";
 import Footer from "./footer.js";
 
-export default ({ children }) => {
+export default ({ children }) => {    
 
     return (
         <div className="App">
             <Head>
-                <title>Top Chartered Accountant in Madhapur, Hyderabad, Telangana, India | CRR Corporte Services</title>
+                <title>Contact us to File Income Tax Returns (ITR) for FY 2023-24 | CRR Corporte Services ITR filing</title>
                 <link rel="icon" href="/favicon-32x32.png" />
                 <meta
                     name="description"
-                    content="Top Chartered Accountant in Madhapur, Hyderabad, Telangana, India | CRR Corporte Services."
-                /> 
-
+                    content="Top Chartered Accountant in Madhapur, Hyderabad, Telangana, India. Contact us to File Income Tax Returns (ITR) for FY 2023-24. CRR Corporte Services handles all cases of Income from Salary, Interest Income, Capital Gains, House Property, Business and Profession. Maximize your deductions by handling all deductions under Section 80 & the rest."
+                />  
+                <meta
+                    name="keywords"
+                    content="efiling tax, income tax efiling, efiling india, india tax efiling, income tax filing, itr filing, itr efiling, itr filing fy 2023-24, income tax filing fy 2023-24, gst filing, gst returns filing"
+                />  
             </Head>
             <Header></Header>
             {children}
