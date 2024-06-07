@@ -2,11 +2,15 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import ContactButton from "../Contact/contactbutton";
 
 const Service = ({service}:{service:any}) => {
+ const showWidget = () => {
+  (window as any).Tawk_API.maximize();
+  }
   return (
     <> 
-      <section className="overflow-hidden pb-20 pt-35 lg:pb-25 xl:pb-30  bg-[#E9F9FF] ">
+      <section className="overflow-hidden pb-20 pt-35 lg:pb-25 xl:pb-30  bg-[#E9F9FF] dark:bg-blacksection ">
         <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0 ">
           <div className="flex items-center gap-8 lg:gap-12.5 ">
             <motion.div
@@ -71,57 +75,17 @@ const Service = ({service}:{service:any}) => {
               className="animate_left relative mx-auto hidden aspect-[588/526.5] md:block md:w-2/5"
             >
               <div
-                className="wow fadeInUp shadow-testimonial dark:bg-dark-2 rounded-lg bg-white px-8 py-10 dark:shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
+                className="wow fadeInUp shadow-testimonial dark:bg-blacksection rounded-lg bg-white px-8 py-10 dark:shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
                 data-wow-delay=".2s "
               >
                 <h3 className="text-dark mb-8 text-2xl font-semibold dark:text-white md:text-[28px] md:leading-[1.42]">
-                  Send us a Message 
-                </h3>
-                <form>
-                  <div className="mb-[22px]">
-                    
-                    <input
-                      placeholder="Full Name"
-                      className="text-dark placeholder:text-body-color/60 dark:border-dark-3 w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 focus:border-primary focus:outline-none dark:text-white"
-                      type="text"
-                      name="fullName"
-                    />
-                  </div>
-                  <div className="mb-[22px]">
-                    
-                    <input
-                      placeholder="example@yourmail.com"
-                      className="text-dark placeholder:text-body-color/60 dark:border-dark-3 w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 focus:border-primary focus:outline-none dark:text-white"
-                      type="email"
-                      name="email"
-                    />
-                  </div>
-                  <div className="mb-[22px]">
-                   
-                    <input
-                      placeholder="Phone Numner"
-                      className="text-dark placeholder:text-body-color/60 dark:border-dark-3 w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 focus:border-primary focus:outline-none dark:text-white"
-                      type="text"
-                      name="phone"
-                    />
-                  </div>
-                  <div className="mb-[30px]">
-                    
-                    <textarea
-                      name="message"
-                      placeholder="type your message here"
-                      className="text-dark placeholder:text-body-color/60 dark:border-dark-3 w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 focus:border-primary focus:outline-none dark:text-white"
-                    ></textarea>
-                  </div>
+                 Apply for a Registraion
+                </h3> 
+                  
                   <div className="mb-0">
-                    <button
-                      type="submit"
-                      className="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-primary/90"
-                    >
-                      Send
-                    </button>
-                  </div>
-                </form>
+                   
+                  <ContactButton />
+                  </div> 
               </div>
             </motion.div>
           </div>
