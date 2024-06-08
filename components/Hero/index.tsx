@@ -26,7 +26,7 @@ const Hero = () => {
                 </span>
               </h1>
               <p>
-               Our Experts helps you save time & money without compromiaing accuracy in income tax filing.
+              Trusted Partner for all your Accounting, GST, HR, Tax Services and ITR filings.
               </p>
 
               <div className="mt-10">

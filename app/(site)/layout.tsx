@@ -1,5 +1,4 @@
-"use client";
-
+"use client"; 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Lines from "@/components/Lines";
@@ -18,6 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <meta name="google-site-verification" content="EHvzfEV56LvDS0k7yC98eFs5t3AmDzrgJn7nWvNjGok" />
       <body className={`dark:bg-black ${inter.className}`}>
         <ThemeProvider
           enableSystem={false}
@@ -30,6 +30,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <ScrollToTop />
+                
         </ThemeProvider>
       </body>
     </html>
